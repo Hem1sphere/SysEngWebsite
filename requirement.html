@@ -15,7 +15,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Team Better Kaggle</title>
+    <title>UCL Team 12 (AI Test Platform) Progress Documentation</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
@@ -30,7 +30,7 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="index.html">Team Better Kaggle</a>
+            <a class="navbar-brand" href="index.html">UCL Team 12 (AI Test Platform)</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,8 +84,12 @@
 
             <div>
                 <h2>Introduction to project background and client </h2>
-                <p>Introduction to project background </p>
-                <p></p>The client for this project would be the NHS Digital. Specifically, our contact person is Mr Joseph Connor, the ML & AI Lead of the department.</p>
+                <p>NHS has many suppliers who want to sell them AI algorithms.
+                    However, NHS lacks a platform to test these algorithms.
+                    Hence, the project was conceptualised is to create such a platform where it is easy for developers
+                    to program their solutions and for NHS to post challenges and choose the best solutions.</p>
+                <p>The client for this project would be the NHS Digital.
+                    Specifically, our contact person is Mr Joseph Connor, the ML & AI Lead of the department.</p>
             </div>
 
             <hr class="featurette-divider">
@@ -122,15 +126,17 @@
                 <h2>MoSCoW requirement list</h2>
                 <p style="margin-bottom: 0">Must Have</p>
                 <ul>
-                    <li>Jupyter notebook embedded on site to write solutions</li>
-                    <li>Ability to upload/download CSV files (results and dataset)</li>
                     <li>Log-in feature which acts as a layer of security as only people with account can access site and thus data)</li>
+                    <li>Setting up of different user types (clinician and developer)</li>
+                    <li>Differing interfaces and functionalities for developers and clinicians (e.g.create challenge vs create solution respectively) </li>
+                    <li>Set up JupyterHub Server</li>
+                    <li>Integrate JupyterHub to the site to provide onsite coding environment</li>
+                    <li>Ability to upload/download CSV files (results and dataset)</li>
                     <li>Challenge page consisting of different challenges and their description</li>
                     <li>Individual challenge page (description, evaluation, data) and ability to join challenge (i.e. challenge appears on profile and triggers ability to submit solution)</li>
                     <li>Solutions page</li>
                     <li>Individual solution page (description, code and results in CSV format)</li>
                     <li>Personalised profile page (listing solutions submitted, challenges followed and contact details)</li>
-                    <li>Differing interfaces for developers and clinicians</li>
                 </ul>
                 <p style="margin-bottom: 0">Should Have</p>
                 <ul>
