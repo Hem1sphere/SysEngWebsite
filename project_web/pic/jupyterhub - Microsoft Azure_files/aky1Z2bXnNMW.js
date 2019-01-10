@@ -1,0 +1,1 @@
+define("MsPortalImpl.Controls/Controls/Lists/Base/Controls.Lists.ActionHandler",["require","exports","f","ko"],(function(n,t,i,r){"use strict";var u;return (function(n){function u(n){var i=t.data(n,"ActionHandler");return i||(i=r.observable(),t.data(n,"ActionHandler",i)),i}var t=i.Base.ProxiedObservables;n.getOrCreateActionHandler=u})(u||(u={})),u}))

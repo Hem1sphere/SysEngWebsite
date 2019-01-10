@@ -1,0 +1,138 @@
+/**
+ *  Styles used for PowerShell experience
+**/
+
+.terminal .xterm-viewport {
+    background-color: #012456;
+    overflow-y: scroll;
+}
+
+#terminal-container .terminal {
+     background-color: #012456;
+     color: #fafafa;
+}
+
+#terminal-wrapper {
+     background-color: #012456;
+}
+
+#terminal-shell-selector .dropdown-content {
+     min-width: 115px;
+}
+
+/* Color == DarkRed */
+.terminal .xterm-color-1 {
+    color: #FF4D4D;
+}
+
+.terminal .xterm-bg-color-1 {
+    background-color: #FF4D4D;
+}
+
+/* Color == DarkGreen */
+.terminal .xterm-color-2 {
+    color: #00A800;
+}
+
+.terminal .xterm-bg-color-2 {
+    background-color: #00A800;
+}
+
+/* Color == DarkYellow */
+.terminal .xterm-color-3 {
+    color: #EEEDF0;
+}
+
+.terminal .xterm-bg-color-3 {
+    background-color: #EEEDF0;
+}
+
+/* Color == DarkBlue */
+.terminal .xterm-color-4 {
+    color: #8080FF;
+}
+
+.terminal .xterm-bg-color-4 {
+    background-color: #8080FF;
+}
+
+/* Color == DarkMagenta */
+.terminal .xterm-color-5 {
+    color: #012456;
+}
+
+.terminal .xterm-bg-color-5 {
+    background-color: #012456;
+}
+
+/* Color == DarkCyan */
+.terminal .xterm-color-6 {
+    color: #007A7A;
+}
+
+.terminal .xterm-bg-color-6 {
+    background-color: #007A7A;
+}
+
+/* Color == DarkGray */
+.terminal .xterm-color-8 {
+    color: #B3B3B3;
+}
+
+.terminal .xterm-bg-color-8 {
+    background-color: #B3B3B3;
+}
+
+/* Color == Red */
+.terminal .xterm-color-9 {
+    color: #FF9494;
+}
+
+.terminal .xterm-bg-color-9 {
+    background-color: #FF9494;
+}
+
+/* Color == Green */
+.terminal .xterm-color-10 {
+    color: lime;
+}
+
+.terminal .xterm-bg-color-10 {
+    background-color: lime;
+}
+
+/* Color == Yellow */
+.terminal .xterm-color-11 {
+    color: yellow;
+}
+
+.terminal .xterm-bg-color-11 {
+    background-color: yellow;
+}
+
+/* Color == Blue */
+.terminal .xterm-color-12 {
+    color: #ADADFF;
+}
+
+.terminal .xterm-bg-color-12 {
+    background-color: #ADADFF;
+}
+
+/* Color == Magenta */
+.terminal .xterm-color-13 {
+    color: #FF80FF;
+}
+
+.terminal .xterm-bg-color-13 {
+    background-color: #FF80FF;
+}
+
+/* Color == Cyan */
+.terminal .xterm-color-14 {
+    color: cyan;
+}
+
+.terminal .xterm-bg-color-14 {
+    background-color: cyan;
+}
