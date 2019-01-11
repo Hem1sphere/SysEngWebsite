@@ -119,21 +119,21 @@
 
             <div>
                 <h2>Implementation of Main Finished Functionalities</h2>
-                <p>- Django's user authentication system allows setting up of different user types, user registration and logging in.</p>
+                <h5>Setting up of authentication system (i.e. different user types, user registration and logging in)</h5>
                 <p>We used the Django admin framework to implement this feature which acts as a layer of security as only people with account can access site and thus data.
                 </p>
                 <br>
-                <p>- Upload/download of CSV files (results and dataset)</p>
+                <h5>Upload/download of CSV files (results and dataset)</h5>
                 <p>This function is achieved with Django built-in form submission support. Different form types can be used to submit a varied type of data, in our case enctype="multipart/form-data" is used for file submission.</p>  
                 <br>
-                <p>- Deploy on Azure and provide cloud computing services</p>
+                <h5>Deployment on Azure and provision of cloud computing services</h5>
                 <p>To deploy the JupyterHub on Azure, we chosed the Azure Kubernetes Service(AKS) which can provide a fully managed Kubernetes container orchestration service.
                 Firstly, we prepared our Azure shell environment using the Azure interactive shell.
                 Then, we activated the subscription to manage spending and created a resource group. Azure uses the concept of resource groups to group related resources together. 
                 We also created the resource group in a given data center location (UK-South) for GDPR. 
                 After that, we created computational resources within this resource group and created an fully functionsl AKS cluster to deploy the JupyterHub.</p>
                 <br>
-                <p>- Set up JupyterHub server and integrate JupyterHub to the site to provide onsite coding environment</p>
+                <h5>Setting up and integration of JupyterHub to the site to provide onsite coding environment</h5>
                 <p>Before setting up the JupyterHub, we set up Helm which is the package manager for Kubernetes.
                 Then, we wrote some YAML configuration files. Followed by these, we made Helm aware of the JupyterHub Helm chart repository and installed the JupyterHub chart from it.</p>
                 <p>To use JupyterHub, we entered the external IP for the proxy-public service in to a browser. 
