@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="112de8b3-86be-4dd3-8f21-3a3b9cf8af98" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/pic/prototype/sys_arch.jpg" />
       <change beforePath="$PROJECT_DIR$/prototype.html" afterPath="$PROJECT_DIR$/prototype.html" />
+      <change beforePath="$PROJECT_DIR$/research.html" afterPath="$PROJECT_DIR$/research.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,9 +45,12 @@
       <file leaf-file-name="prototype.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prototype.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="-411">
               <caret line="85" column="78" lean-forward="true" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
-              <folding />
+              <folding>
+                <element signature="n#style#0;n#h2#1;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1547171991938" expanded="false" signature="3525:3550" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +80,8 @@
       <file leaf-file-name="research.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/research.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="100" column="86" lean-forward="false" selection-start-line="100" selection-start-column="86" selection-end-line="100" selection-end-column="86" />
+            <state relative-caret-position="739">
+              <caret line="131" column="86" lean-forward="false" selection-start-line="131" selection-start-column="86" selection-end-line="131" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -186,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546462298975</updated>
       <workItem from="1546462300151" duration="1255000" />
-      <workItem from="1547080769370" duration="24000000" />
+      <workItem from="1547080769370" duration="24621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25255000" />
+    <option name="totallyTimeSpent" value="25876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -320,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/research.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="100" column="86" lean-forward="false" selection-start-line="100" selection-start-column="86" selection-end-line="100" selection-end-column="86" />
+        <state relative-caret-position="739">
+          <caret line="131" column="86" lean-forward="false" selection-start-line="131" selection-start-column="86" selection-end-line="131" selection-end-column="86" />
           <folding />
         </state>
       </provider>
@@ -362,9 +367,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="-411">
           <caret line="85" column="78" lean-forward="true" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#h2#1;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1547171991938" expanded="false" signature="3525:3550" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
