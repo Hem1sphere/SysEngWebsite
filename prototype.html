@@ -84,9 +84,21 @@
             </div>
             <div>
                 <h2 style="padding-bottom:1.5rem" >System Architecture Diagram</h2>
-                <img  class="rounded mx-auto d-block" style="height:500px;width:700px; padding-bottom:2.5rem"  src="pic/prototype/sys_arch.png">
-                <h2 style="padding-bottom:1.5rem" >Description of Each Component</h2>
-                <p> brief description of each component.....</p>
+                <img  class="rounded mx-auto d-block" style="height:500px;width:700px;"  src="pic/prototype/sys_arch.jpg">
+                <h2 style="padding-bottom:0.7rem" >Description of Each Component</h2>
+                <h4>- WebApp: NHS PlayGround</h4>
+                <p>The NHS PlayGround application is developed mainly with Django web framework. Regarding front-end, we implement html templates rendered in Django. As for the database, the Django SQLite is used to store the information of different types of users, the challenges provided by clinicians and the solutions uploaded by AI developers. Additionally, Django REST framework is used to develop the JupyterHub REST API.</p>
+                <h4>- Jupyter Hub</h4>
+                <p>JupyterHub is a multi-user server that manages and proxies multiple instances of the single-user Jupyter notebook server.</p>
+                <p>Three subsystems make up JupyterHub:</p>
+                <p>(1) a multi-user Hub (tornado process)</p>
+                <p>(2) a configurable http proxy (node-http-proxy)</p>
+                <p>(3) multiple single-user Jupyter notebook servers (Python/IPython/tornado)</p>
+                <h4>- Kubernetes on AKS</h4>
+                <p>Azure Kubernetes Service (AKS) which is a managed container orchestration service based on the open source Kubernetes system.
+                Kubernetes is the best choice to set up our own JupyterHub on a cloud and leverage the clouds scalable nature to support large groups of users.
+                Based on Kubernetes, resources on the cloud can be managed.</p>
+
             </div>
 
             <hr class="featurette-divider">
