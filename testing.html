@@ -91,17 +91,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#uni_int">
-                                <h6>Unit and integration testing</h6>
+                                <h6>Unit and Integration testing</h6>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#compatibility">
-                                <h6>Compatibility testing (if applicable)</h6>
+                                <h6>Compatibility Testing</h6>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#responsive">
-                                <h6>Responsive design testing (if applicable)</h6>
+                                <h6>Responsive Design Testing</h6>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -153,7 +153,19 @@
                     <h4>Unit and Integration Testing</h4>
 
                     <hr class="featurette-divider">
-                    <p>.................</p>
+                    <p>Our tests of the application itself follows the best practices as recommended by Django and makes
+                        extensive use of the Django test suite. For each sub-application (the different Django applications e.g. users, challenges etc), tests were written
+                        for views, models and forms where applicable. </p>
+                    <p>The tests for views include whether the correct template was used,
+                        whether the URL routing is correctly set up and HTTP requests such as post requests are correctly processed etc.
+                        In the tests for models, we test for correct behavior of object creation and retrieval as desired. For
+                        forms, form validation is tested.</p>
+                    <p>An example of tests written for challenge view is shown below:</p>
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="img/tests/unittest.PNG">
+                        </div>
+                    </div>
 
                 </div>
 
@@ -163,10 +175,10 @@
 
                 <div id="compatibility" style="padding:2rem 1.5rem">
 
-                    <h4>Compatibility Testing (if applicable)</h4>
+                    <h4>Compatibility Testing</h4>
 
                     <hr class="featurette-divider">
-                    <p>.................</p>
+                    <p>*insert screenshots of our web app on different browsers*</p>
 
                 </div>
 
@@ -174,10 +186,10 @@
 
                 <div id="responsive" style="padding:2rem 1.5rem">
 
-                    <h4>Responsive Design Testing (if applicable)</h4>
+                    <h4>Responsive Design Testing</h4>
 
                     <hr class="featurette-divider">
-                    <p>.................</p>
+                    <p>*insert screenshots of our web app on different-sized devices, ipad/phone etc*</p>
 
                 </div>
 
