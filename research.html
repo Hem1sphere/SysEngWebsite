@@ -111,15 +111,14 @@
             </div>
 
 
-
             <div class="col" id="main" style="height:47rem;overflow: auto; padding-top:2rem">
 
                 <div style="padding:1rem 1.5rem">
                     <h3><strong>RESEARCH</strong></h3>
                 </div>
 
-
-                <div id="review" style="padding:1.5rem 1.5rem">
+                <div id="review"> <p> </p></div>
+                <div style="padding:1.5rem 1.5rem">
                     <h4>Review of Existing Solutions</h4>
                     <hr class="featurette-divider">
                     <p>Kaggle is a online platfrom for creating competitions and building kernels for those competitions, and also allows data scientists to learn and communicate via its forum.</p>
@@ -130,10 +129,11 @@
                 </div>
 
 
-
-                <div id="related" style="padding:2rem 1.5rem">
+                <div id="related"> <p>   </p> </div>
+                <div style="padding:2rem 1.5rem">
                     <h4>Related Technologies</h4>
                     <hr class="featurette-divider">
+                    <h5 style="color:#0b9caf"><strong>Python VS JavaScript</strong></h5>
                     <p>At the beginning stage, we looked into both Python and JavaScript as the main programming language used in NHS PlayGround web app project.</p>
                     <p>With regard to JavaScript, the Node.js is quite powerful and can provide services from huge number of free tools. One word – npm, a default Node.js package manager, it also serves as a marketplace for open source JavaScript tools,
                         which plays an important role in the advance of this technology. In addition, Node.js has generally better efficiency and overall developer productivity since With the same language on both sides, you can reuse code on front-end
@@ -141,10 +141,17 @@
                     <p>As for Python, there is a python-based free and open-source web framework named Django allowing you to quickly and efficiently create a quality Web application. Django is a full stack web development framework can be used to develop
                         full fledged websites in Python. It encourages rapid development and advocates pragmatic and clean code [2]. In this project, we have to using lots of python-based tools and server (e.g. Jupyter). It could be easier for us to use
                         Python in this project without many "pipeline" files.</p>
-                    <p></p>
-                    <p></p>
+                    <br>
+                   
+                    <h5 style="color:#0b9caf"><strong>Choice of Database</strong></h5>
                     <p>As for the database, the options explored were MySQL and SQLite. SQLite is an embedded database and has less features compared to MySQL such as support for concurrency and does not scale to huge amounts of data. However, in our application
                         where we do not foresee a need for concurrency and huge datasets, we decided to go with the simpler option of SQLite which sufficiently serves our needs.</p>
+                    
+                    <br>
+                    <h5 style="color:#0b9caf"><strong>Embeded Coding Environment</strong></h5>
+                    <p>  </p>
+
+                    <h6 style="color:#19b0ec"><strong>- AWS SageMaker VS Azure Machine Learning</strong></h6>
 
                     <p>For the embedded coding environment, we first looked into using AWS SageMaker and Azure Machine Learning Studio. </p>
 
@@ -169,10 +176,17 @@
                     <p>
                         <b>However, Azure Machine Learninf Studio is not available in UK region.</b>
                     </p>
-
-                    <p>Then, we thought of embedding the Jupyter notebook directly on the web app. However, Jupyter notebooks do not support multiple users and can hardly be deployed on a remote server.</p>
+                    <br>
+                    <h6 style="color:#19b0ec"><strong>- Comparisons among Jupyter Projects</strong></h6>
+                    <p>Then, we thought of embedding the Jupyter notebook directly on the web app. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live
+                    code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical
+                    simulation, statistical modeling, data visualization, machine learning, and much more.
+                    However, Jupyter notebooks do not support multiple users and can hardly be deployed on a remote server.</p>
                     <p>Based on our research, JupyterHub is a good choice for this project. JupyterHub, a multi-user Hub, spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server. JupyterHub can be used to serve notebooks
-                        to a class of students, a corporate data science group, or a scientific research group [5].</p>
+                        to a class of students, a corporate data science group, or a scientific research group [5]. JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and
+                        resources without burdening the users with installation and maintenance tasks. Users - including students, researchers,
+                        and data scientists - can get their work done in their own workspaces on shared resources which can be managed
+                        efficiently by system administrators [5].</p>
                     <p>JupyterHub allows users to interact with a computing environment through a web page. As most devices have access to a web browser, JupyterHub makes it is easy to provide and standardize the computing environment of a group of people
                         (e.g. for a class of students or an analytics team).The Kubernetes can help us set up our own JupyterHub on a cloud and leverage the clouds scalable nature to support large groups of users.</p>
                     <p></p>
@@ -180,8 +194,8 @@
                 </div>
 
 
-
-                <div id="summary" style="padding:2rem 1.5rem">
+                <div id="summary"> <p> </p></div>
+                <div style="padding:2rem 1.5rem">
                     <h4>Summary of Final Decision</h4>
                     <hr class="featurette-divider">
                     <p>The final decision for the project was to use the Django web framework with the embedded SQLite database due to its ease of use. </p>
@@ -189,8 +203,8 @@
 
                 </div>
 
-
-                <div id="reference" style="padding:2rem 1.5rem">
+                <div id="reference"> <p> </p></div>
+                <div  style="padding:2rem 1.5rem">
                     <h4>References</h4>
                     <hr class="featurette-divider">
                     <ul>
