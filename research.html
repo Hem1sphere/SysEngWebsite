@@ -107,7 +107,7 @@
             </div>
 
 
-            <div class="col" id="main" style="height:47rem;overflow: auto; padding-top:2rem">
+            <div class="col" id="main" style="height:47rem;overflow: auto; padding-top:2rem;padding-right:2rem">
 
                 <div id="review" style="padding:1rem 1.5rem">
                     <h3><strong>RESEARCH</strong></h3>
@@ -131,6 +131,7 @@
                     <h4>Related Technologies</h4>
                     <hr class="featurette-divider">
                     <h5 style="color:#0b9caf"><strong>Python VS JavaScript</strong></h5>
+                    <br>
                     <p>At the beginning stage, we looked into both Python and JavaScript as the main programming language used in NHS PlayGround web app project.</p>
                     <p>With regard to JavaScript, the Node.js is quite powerful and can provide services from huge number of free tools. One word – npm, a default Node.js package manager, it also serves as a marketplace for open source JavaScript tools,
                         which plays an important role in the advance of this technology. In addition, Node.js has generally better efficiency and overall developer productivity since With the same language on both sides, you can reuse code on front-end
@@ -141,15 +142,16 @@
                     <br>
 
                     <h5 style="color:#0b9caf"><strong>Choice of Database</strong></h5>
+                    <br>
                     <p>As for the database, the options explored were MySQL and SQLite. SQLite is an embedded database and has less features compared to MySQL such as support for concurrency and does not scale to huge amounts of data. However, in our application
                         where we do not foresee a need for concurrency and huge datasets, we decided to go with the simpler option of SQLite which sufficiently serves our needs.</p>
 
                     <br>
                     <h5 style="color:#0b9caf"><strong>Embeded Coding Environment</strong></h5>
-                    <p> </p>
+                     <br>
 
                     <h6 style="color:#19b0ec"><strong>- AWS SageMaker VS Azure Machine Learning</strong></h6>
-
+                     <br>
                     <p>For the embedded coding environment, we first looked into using AWS SageMaker and Azure Machine Learning Studio. </p>
 
                     <p>The advantages of using AWS SageMaker [3] are: </p>
@@ -175,16 +177,63 @@
                     </p>
                     <br>
                     <h6 style="color:#19b0ec"><strong>- Comparisons among Jupyter Projects</strong></h6>
+
+                   <br>
+                    <p>Jupyter Notebook:</p>
                     <p>Then, we thought of embedding the Jupyter notebook directly on the web app. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and
-                        narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. However, Jupyter notebooks do not support multiple users and can hardly
-                        be deployed on a remote server.</p>
+                        narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more [5]. 
+                        The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. 
+                        The Jupyter notebook combines two components:
+                        A web application: a browser-based tool for interactive authoring of documents which combine explanatory text, mathematics, computations and their rich media output.
+                        Notebook documents: a representation of all content visible in the web application, including inputs and outputs of the computations, explanatory text, mathematics, images, and rich media representations of objects [5].
+                        However, Jupyter notebooks do not support multiple users and can hardly be deployed on a remote server.</p>
+
+                    <p>JupyterLab:</p>
+                    <p>JupyterLab is a web-based user interface for Project Jupyter. JupyterLab enables people to work with documents and activities such as Jupyter notebooks, text editors, terminals, and custom components in a flexible, integrated, 
+                    and extensible manner. You can arrange multiple documents and activities side by side in the work area using tabs and splitters. Documents and activities integrate with each other, enabling new workflows for interactive computing, for example:
+                    Code Consoles provide transient scratchpads for running code interactively, with full support for rich output. A code console can be linked to a notebook kernel as a computation log from the notebook, and
+                    Kernel-backed documents enable code in any text file (Markdown, Python, R, LaTeX, etc.) to be run interactively in any Jupyter kernel [6].</p>
+                
+                    <p>JupyterHub:</p>
                     <p>Based on our research, JupyterHub is a good choice for this project. JupyterHub, a multi-user Hub, spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server. JupyterHub can be used to serve notebooks
-                        to a class of students, a corporate data science group, or a scientific research group [5]. JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without
+                        to a class of students, a corporate data science group, or a scientific research group [7]. JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without
                         burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by
-                        system administrators [5].</p>
+                        system administrators [7].</p>
+                    
                     <p>JupyterHub allows users to interact with a computing environment through a web page. As most devices have access to a web browser, JupyterHub makes it is easy to provide and standardize the computing environment of a group of people
                         (e.g. for a class of students or an analytics team).The Kubernetes can help us set up our own JupyterHub on a cloud and leverage the clouds scalable nature to support large groups of users.</p>
-                    <p></p>
+
+                    <p>JupyterHub is featured with lots of functions. JupyterHub has pluggable authentication,so that we can manage users and authentication with PAM, OAuth or integrate withr other directory service system.
+                    It can work with centralized deployment, Jupyter Notebook to thousands of users is in the organization on centralized infrastructure on- or off-site.
+                    What's more, it is container friendly which means we can yse Docker and Kubernetes to scale the deployment, isolate user processes, and simplify software installation [7].</p>
+                    
+                    <br>
+
+                    <h6 style="color:#19b0ec"><strong>- JupyterHub with Kubernetes</strong></h6>
+
+                    <br>
+                    <p>Kubernetes: </p>
+                    <p>Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery [8].
+                    Kubernetes provides service discovery and load balancing. Then there is no need for developers to modify the application to use an unfamiliar service discovery mechanism. 
+                    Kubernetes gives containers their own IP addresses for a set of containers, and can load-balance across them.
+                    </p>
+
+                    <p>Container: </p>
+                    <p>The Old Way to deploy applications was to install the applications on a host using the operating-system package manager. 
+                    This had the disadvantage of entangling the applications’ executables, configuration, libraries, and lifecycles with each other and with the host OS. 
+                    One could build immutable virtual-machine images in order to achieve predictable rollouts and rollbacks, but VMs are heavyweight and non-portable [8].
+                    </p>
+                    <p>The New Way is to deploy containers based on operating-system-level virtualization rather than hardware virtualization. These containers are isolated from each other and from the host: 
+                    they have their own filesystems, they can’t see each others’ processes, and their computational resource usage can be bounded. 
+                    They are easier to build than VMs, and because they are decoupled from the underlying infrastructure and from the host filesystem, they are portable across clouds and OS distributions [8].
+                    </p>
+
+                    <p>Because containers are small and fast, one application can be packed in each container image. This one-to-one application-to-image relationship unlocks the full benefits of containers.
+                    With containers, immutable container images can be created at build/release time rather than deployment time, since each application doesn’t need to be composed with the rest of the application stack, nor married to the production infrastructure environment [8]. 
+                    Generating container images at build/release time enables a consistent environment to be carried from development into production. Similarly, containers are vastly more transparent than VMs, which facilitates monitoring and management. 
+                    This is especially true when the containers’ process lifecycles are managed by the infrastructure rather than hidden by a process supervisor inside the container. 
+                    Finally, with a single application per container, managing the containers becomes tantamount to managing deployment of the application [8].
+                    Hence, we decided to use container to deploy the JupyterHub with Kubernetes.</p> 
 
                 </div>
 
@@ -212,14 +261,23 @@
                         <br>
                         <li>[2] What is Django? Where is it used? What is the best site to learn it?, 2017. [Online]. Available: https://www.quora.com/What-is-Django-Where-is-it-used-What-is-the-best-site-to-learn-it [Accessed: 11- Jan- 2019].</li>
                         <br>
-                        <li>[3] Amazon SageMaker. [Online]. Available: https://aws.amazon.com/sagemaker/ [Accessed: 11- Jan- 2019].</li>
+                        <li>[3] Amazon SageMaker. [Online]. Available: https://aws.amazon.com/sagemaker/ [Accessed: 11- April- 2019].</li>
                         <br>
-                        <li>[4] Azure Machine Learning Studio. [Online]. Available:https://azure.microsoft.com/en-gb/services/machine-learning-studio/ [Accessed: 11- Jan- 2019].</li>
+                        <li>[4] Azure Machine Learning Studio. [Online]. Available:https://azure.microsoft.com/en-gb/services/machine-learning-studio/ [Accessed: 11- April- 2019].</li>
                         <br>
-                        <li>[5] JupyterHub [Online]. Available: https://jupyterhub.readthedocs.io/en/stable/ [Accessed: 11- Jan- 2019].
+                        <li>[5] Jupyter Notebook [Online]. Available: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html [Accessed: 11- April- 2019].
                         </li>
                         <br>
-                        <li>[6] Azure Kubernetes Service (AKS). [Online]. Available: https://azure.microsoft.com/en-gb/services/kubernetes-service/ [Accessed: 11- Jan- 2019].</li>
+                        <li>[6] Jupyter Lab [Online]. Available: https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html#overview [Accessed: 11- April- 2019].
+                        </li>
+                        <br>
+                        <li>[7] JupyterHub [Online]. Available: https://jupyterhub.readthedocs.io/en/stable/ [Accessed: 11- April- 2019].
+                        </li>
+                        <br>
+                        <li>[8] Kubernetes [Online]. Available: https://kubernetes.io/ [Accessed: 11- April- 2019].
+                        </li>
+                        <br>
+                        <li>[9] Azure Kubernetes Service (AKS). [Online]. Available: https://azure.microsoft.com/en-gb/services/kubernetes-service/ [Accessed: 11- April- 2019].</li>
                     </ul>
                     <p></p>
 
