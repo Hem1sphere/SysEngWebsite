@@ -190,7 +190,7 @@
 
                     <p>— Teach users to use your application</p>
                     
-                    <p>The web application can be found at https://nhsplayground.azurewebsites.net/. For the admin account
+                    <p>The web application can be found at <a href="https://nhsplayground.azurewebsites.net/">https://nhsplayground.azurewebsites.net/</a>. For the admin account
                         to access the Django admin page with administrative permissions, the username is <em>admin</em>
                         with password <em>admin123</em>.
                     </p>
@@ -210,19 +210,21 @@
                 <div style="padding:2rem 1.5rem">
                     <h4>Deployment Manual</h4>
                     <hr class="featurette-divider">
-                    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code
-                        editing
-                        brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-                        swag
-                        wolf squid tote bag. Tote bag cronut semiotics,
-                        raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean
-                        shorts
-                        paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche
-                        semiotics
-                        ugh synth chillwave meditation.
-                        Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master
-                        cleanse hella
-                        DIY 90's blog.</p>
+                    <p>First, clone the repo found at <a href="https://github.com/nhspg/COMP0016T12">https://github.com/nhspg/COMP0016T12</a>
+                        on the local machine. Then, set up an Azure app service to host the Django app:</p>
+                    <ul>
+                        <li>Create an Azure App Service running Linux on the Azure portal.</li>
+                        <li>At the deployment center for the app, choose to deploy via a GitHub repo with the link provided above.</li>
+                    </ul>
+                    <p>Then, to set up an Azure SQL database:</p>
+                    <ul>
+                        <li>Create an Azure SQL database on the Azure portal.</li>
+                        <li>On the database page on the Azure portal, navigate to "Connection Strings" then "ODBC" to get
+                            the relevant details to change under "settings.py" database code.</li>
+                        <li>On the local machine's terminal, run the command "python manage.py migrate" to update the connected
+                            database.</li>
+                    </ul>
+                    <p>Finally, to set up a JupyterHub server:</p>
                 </div>
 
 
