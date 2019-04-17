@@ -143,14 +143,18 @@
 
                     <h5 style="color:#0b9caf"><strong>Choice of Database</strong></h5>
                     <br>
-                    <p>As for the database, the options explored were MySQL and SQLite. SQLite is an embedded database and has less features compared to MySQL such as support for concurrency and does not scale to huge amounts of data. However, in our application
-                        where we do not foresee a need for concurrency and huge datasets, we decided to go with the simpler option of SQLite which sufficiently serves our needs.</p>
+                    <p>As for the database, the options explored were MySQL, SQLite and Microsoft Server SQL. SQLite is
+                        an embedded database and has less features compared to MySQL such as support for concurrency and does
+                        not scale to huge amounts of data while Microsoft Server SQL is similar to MySQL in terms of richness of the features
+                        provided. Microsoft SQL Server is the engine used in the Azure SQL Database which is a database-as-service(DBaaS)
+                        provided by Azure. We chose Azure SQL Database due to its ease of integration with the web app which is also hosted
+                        on Azure as well and the provision of additional services on top of just the engine.</p>
 
                     <br>
-                    <h5 style="color:#0b9caf"><strong>Embeded Coding Environment</strong></h5>
+                    <h5 style="color:#0b9caf"><strong>Embedded Coding Environment</strong></h5>
                      <br>
 
-                    <h6 style="color:#19b0ec"><strong>- AWS SageMaker VS Azure Machine Learning</strong></h6>
+                    <h6 style="color:#19b0ec"><strong>AWS SageMaker VS Azure Machine Learning</strong></h6>
                      <br>
                     <p>For the embedded coding environment, we first looked into using AWS SageMaker and Azure Machine Learning Studio. </p>
 
@@ -173,10 +177,10 @@
                         <li>Track your experiments, manage models and easily deploy with integrated CI/CD tooling.</li>
                     </ul>
                     <p>
-                        <b>However, Azure Machine Learninf Studio is not available in UK region.</b>
+                        <b>However, Azure Machine Learning Studio is not available in UK region.</b>
                     </p>
                     <br>
-                    <h6 style="color:#19b0ec"><strong>- Comparisons among Jupyter Projects</strong></h6>
+                    <h6 style="color:#19b0ec"><strong>Comparisons between different Jupyter Projects</strong></h6>
 
                    <br>
                     <p>Jupyter Notebook:</p>
@@ -209,7 +213,7 @@
                     
                     <br>
 
-                    <h6 style="color:#19b0ec"><strong>- JupyterHub with Kubernetes</strong></h6>
+                    <h6 style="color:#19b0ec"><strong>JupyterHub with Kubernetes</strong></h6>
 
                     <br>
                     <p>Kubernetes: </p>
@@ -244,7 +248,7 @@
                 <div style="padding:2rem 1.5rem">
                     <h4>Summary of Final Decision</h4>
                     <hr class="featurette-divider">
-                    <p>The final decision for the project was to use the Django web framework with the embedded SQLite database due to its ease of use. </p>
+                    <p>The final decision for the project was to use the Django web framework hosted on Azure App Service and Azure SQL Database. </p>
                     <p>For the on-site coding environment, we chose to employ a JupyterHub Server managed by Azure Kubernetes Service (AKS) as it supports multiple users.</p>
 
                 </div>

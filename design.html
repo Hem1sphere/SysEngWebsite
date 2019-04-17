@@ -124,13 +124,13 @@
                     <hr class="featurette-divider ">
                     <img class="rounded mx-auto d-block" style="height:500px;width:700px;" src="img/prototype/sys_arch.jpg">
                     <h5 style="padding-bottom:0.7rem"><strong>Description of Each Component:</strong></h5>
-                    <h5>- WebApp: NHS PlayGround</h5>
-                    <p>The NHS PlayGround application is developed mainly with Django web framework. Regarding front-end, we implement html
-                        templates rendered in Django. As for the database, the Django SQLite is used to store the information of different
+                    <h5 style="color:#0b9caf"><strong>WebApp: CareAI PlayGround</strong></h5>
+                    <p>The CareAI PlayGround application is developed mainly with Django web framework. Regarding front-end, we implement html
+                        templates rendered in Django. As for the database, the Microsoft SQL Server is used to store the information of different
                         types of users, the challenges provided by clinicians and the solutions uploaded by AI developers. Additionally,
                         Django REST framework is used to develop the JupyterHub REST API.</p>
-                    
-                    <h5>- JupyterHub</h5>
+
+                    <h5 style="color:#0b9caf"><strong>JupyterHub</strong></h5>
                     <p>JupyterHub is a multi-user server that manages and proxies multiple instances of the single-user Jupyter notebook
                         server.</p>
                     <p>Three subsystems make up JupyterHub:</p>
@@ -140,7 +140,7 @@
                         <li>multiple single-user Jupyter notebook servers (Python/IPython/tornado)</li>
                     </ol>
                     
-                    <h5>- Kubernetes on AKS</h5>
+                    <h5 style="color:#0b9caf"><strong>Kubernetes on AKS</strong></h5>
                     <p>Azure Kubernetes Service (AKS) which is a managed container orchestration service based on the open source Kubernetes
                         system.
                         Kubernetes is the best choice to set up our own JupyterHub on a cloud and leverage the clouds scalable nature to
@@ -211,7 +211,7 @@
                     <hr class="featurette-divider ">
                     <h5>Setting up of authentication system (i.e. different user types, user registration and logging in)</h5>
                     <p>We used the Django admin framework to implement this feature which acts as a layer of security as only people with
-                        account can access site and thus data.
+                        account can access site and thus data. Also, the creation of clinician accounts is subjected to admin approval.
                     </p>
                     <br>
                     <h5>Upload/download of CSV files (results and dataset)</h5>
@@ -219,13 +219,13 @@
                         varied type of data, in our case enctype="multipart/form-data" is used for file submission.</p>
                     <br>
                     <h5>Deployment on Azure and provision of cloud computing services</h5>
-                    <p>To deploy the JupyterHub on Azure, we chosed the Azure Kubernetes Service(AKS) which can provide a fully managed
+                    <p>To deploy the JupyterHub on Azure, we chose the Azure Kubernetes Service(AKS) which can provide a fully managed
                         Kubernetes container orchestration service.
                         Firstly, we prepared our Azure shell environment using the Azure interactive shell.
                         Then, we activated the subscription to manage spending and created a resource group. Azure uses the concept of
                         resource groups to group related resources together.
                         We also created the resource group in a given data center location (UK-South) for GDPR.
-                        After that, we created computational resources within this resource group and created an fully functionsl AKS
+                        After that, we created computational resources within this resource group and created a fully functional AKS
                         cluster to deploy the JupyterHub.</p>
                     <br>
                     <h5>Setting up and integration of JupyterHub to the site to provide onsite coding environment</h5>
