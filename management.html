@@ -201,6 +201,10 @@
                         account has username <em>test_clinician</em> and password <em>clinician123</em>.
                     </p>
 
+                    <p>To access the online coding environment of CareAI PlayGround, users should participate in the challenges and click the button
+                    on that page to open their JupyterHub page. Then, they can upload the data they need for solution and write down their solutions which 
+                    can be saved automatically on their own Jupyter Notebook.</p>
+
                 </div>
 
 
@@ -216,6 +220,7 @@
                         <li>Create an Azure App Service running Linux on the Azure portal.</li>
                         <li>At the deployment center for the app, choose to deploy via a GitHub repo with the link provided above.</li>
                     </ul>
+                    <br>
                     <p>Then, to set up an Azure SQL database:</p>
                     <ul>
                         <li>Create an Azure SQL database on the Azure portal.</li>
@@ -224,7 +229,24 @@
                         <li>On the local machine's terminal, run the command "python manage.py migrate" to update the connected
                             database.</li>
                     </ul>
+                    <br>
                     <p>Finally, to set up a JupyterHub server:</p>
+                    <p>1) Activate the correct subscription on Azure.
+                    <p>2) Create a resource group. Azure uses the concept of resource groups to group related resources together. The command in terminal is:
+                    az group create \--name=RESOURCE-GROUP-NAME \--location=centralus \ --output table .</p>
+                    <p>3) Create Cluster and name it using command: "mkdir CLUSTER-NAME" and then " cd CLUSTER-NAME".</p>
+                    <p>4) Create an ssh key to secure your cluster: ssh-keygen -f ssh-key-CLUSTER-NAME.</p>
+                    <p>5) Create an AKS cluster using "az aks create --name CLUSTER-NAME \--resource-group RESOURCE-GROUP-NAME \
+                --ssh-key-value ssh-key-CLUSTER-NAME.pub \--node-count 3 \ --node-vm-size Standard_D2s_v3 \--output table".</p>
+                    <p>6) Get credentials from Azure for kubectl to work: az aks get-credentials \
+                --name CLUSTER-NAME \--resource-group RESOURCE-GROUP-NAME \ --output table</p>
+                    <p>7) Check if your cluster is fully functional: kubectl get node </p>
+                    <p>(The response should list three running nodes and their Kubernetes versions and each node should have the status of Ready)</p>
+                    <p>8) Make Helm aware of the JupyterHub Helm chart repository using "helm repo add jupyterhub" and then "helm repo update"</p>
+                    <p>9) Install the chart configured by the config.yaml by running this command from the directory that contains config.yaml:
+                    RELEASE=jhub NAMESPACE=jhub  helm upgrade --install $RELEASE jupyterhub/jupyterhub \--namespace $NAMESPACE  \--version=0.8.0 \ --values config.yaml.</p>
+                    <p>10) To find the IP used to access the JupyterHub, run the following command: kubectl get service --namespace jhub.</p>
+                    <p>11) To use JupyterHub, enter the external IP for the proxy-public service in to a browser. </p>
                 </div>
 
 
@@ -233,19 +255,7 @@
                 <div style="padding:2rem 1.5rem">
                     <h4>Gantt Chart</h4>
                     <hr class="featurette-divider">
-                    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code
-                        editing
-                        brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape
-                        swag
-                        wolf squid tote bag. Tote bag cronut semiotics,
-                        raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean
-                        shorts
-                        paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche
-                        semiotics
-                        ugh synth chillwave meditation.
-                        Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master
-                        cleanse hella
-                        DIY 90's blog.</p>
+                    <p>..........</p>
                 </div>
 
 
