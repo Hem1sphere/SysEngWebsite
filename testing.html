@@ -131,7 +131,12 @@
                 <div style="padding:1.5rem 1.5rem">
                     <h4>Testing Strategy</h4>
                     <hr class="featurette-divider">
-                    <p>..............</p>
+                    <p>To ensure our Django application is functioning as intended, we wrote unit and integration tests
+                        for the application as part of the development process. The unit and integration tests were largely automated using our development tools.</p>
+                    <p>The web application is also intended to work across different browsers because we do not expect
+                        homogenity in the browsers used by our users. To verify compatibility behaviour, we carried out compatibility testing.</p>
+                    <p>Another major aspect of testing done was responsive design testing to establish our application's ability  to function
+                        on different screen resolutions. The method of execution and results of our tests are described detailedly in the sections below.</p>
                 </div>
 
 
@@ -144,13 +149,14 @@
 
                     <hr class="featurette-divider">
                     <p>Our tests of the application itself follows the best practices as recommended by Django and makes
-                        extensive use of the Django test suite. For each sub-application (the different Django applications e.g. users, challenges etc), tests were written
-                        for views, models and forms where applicable. </p>
+                        extensive use of the Django test suite. For each sub-application (the different Django applications e.g. users, challenges etc),
+                        tests were organised neatly in their own directory and were written for views, models and forms where applicable. </p>
                     <p>The tests for views include whether the correct template was used,
                         whether the URL routing is correctly set up and HTTP requests such as post requests are correctly processed etc.
                         In the tests for models, we test for correct behavior of object creation and retrieval as desired. For
                         forms, form validation is tested.</p>
-                    <p>An example of tests written for challenge view is shown below:</p>
+                    <p>The source code for the tests can be viewed in the "tests" directory in each sub-application. In the diagram below,
+                        we show an example of the test code written which in this case is for the challenge view.</p>
                     <div class="card-group">
                         <div class="card">
                             <img src="img/tests/unittest.PNG">
@@ -183,6 +189,10 @@
                     <h4>Responsive Design Testing</h4>
 
                     <hr class="featurette-divider">
+                    <p>Our web application is built to be responsive to different screen resolutions by adhering to responsive
+                        design such as the use of Bootstrap. To test the responsiveness, we loaded our web application on different
+                        phones and observed the results as shown below. Our application is generally responsive and is rendered
+                        well on screens of different sizes.</p>
                     <p>*insert screenshots of our web app on different-sized devices, ipad/phone etc*</p>
 
                 </div>
