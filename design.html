@@ -135,9 +135,9 @@
                     </ol>
                     
                     <h5 style="color:#0b9caf"><strong>Kubernetes on AKS</strong></h5>
-                    <p>Azure Kubernetes Service (AKS) which is a managed container orchestration service based on the open source Kubernetes
+                    <p>Azure Kubernetes Service (AKS) is a managed container orchestration service based on the open source Kubernetes
                         system.
-                        Kubernetes is the best choice to set up our own JupyterHub on a cloud and leverage the clouds scalable nature to
+                        Kubernetes is the best choice to set up our own JupyterHub on a cloud and leverage the cloud's scalable nature to
                         support large groups of users.
                         Based on Kubernetes, resources on the cloud can be managed.</p>
                 </div>
@@ -206,17 +206,17 @@
                     <p>To use JupyterHub, we entered the external IP for the proxy-public service in to a browser.
                         JupyterHub then can run with a default authenticator. Authentication of access to our JupyterHub was written in the
                         configuration.</p>
-                    <p>The site features an automatic ipynb notebook to HTML conversion, which means the developers only need to submit the ipynb file and others can view it directly on the site afterwards.</p>
+                    <p>The site features an automatic conversion from .ipynb file type to HTML which means the developers only need to submit the .ipynb notebook and others can view it directly on the site afterwards.</p>
                     <br>
-                    <h5>Participation system</h5>
+                    <h5>Participation System</h5>
                     <p>Developers need to participate in a challenge first in order to submit solutions. This is achieved using Django's template tags. When the user clicks on the button for 
-                        participation, a function is called to accept the developer into challenge participants, and change the participation button to solution submission button and redirection to 
-                        JupyterHub button.
+                        participation, a function is called to accept the developer into the list of participants for the challenge and the button is changed to a submission button. A new
+                        button to redirect to JupyterHub is also introduced.
                     </p>
                     <br>
-                    <h5>Tutorial and discussion</h5>
-                    <p>Tutorial section is implemented by code reuse from challenge section, and its feature is similar to challenges without a solution submission feature.
-                         Anyone can use it to submit tutorials or create independent datasets. Discussion is also based on code reuse with a different logic and database entity relationship 
+                    <h5>Tutorial & Discussion</h5>
+                    <p>Tutorial section is implemented by code reuse from challenge section, and its features are similar to challenges without a solution submission feature.
+                         Anyone can use it to submit tutorials or create independent datasets. Discussion is also based on code reuse with a different logic and database entity relationship
                          for commenting.
                     </p>
                 </div>
