@@ -225,7 +225,7 @@
                     <p>Container: </p>
                     <p>The Old Way to deploy applications was to install the applications on a host using the operating-system package manager. 
                     This had the disadvantage of entangling the applications’ executables, configuration, libraries, and lifecycles with each other and with the host OS. 
-                    One could build immutable virtual-machine images in order to achieve predictable rollouts and rollbacks, but VMs are heavyweight and non-portable [8].
+                    One could build immutable virtual-machine images in order to achieve predictable rollouts and rollbacks, but VMs are heavyweight and non-portable [9].
                     </p>
                     <p>The New Way is to deploy containers based on operating-system-level virtualization rather than hardware virtualization. These containers are isolated from each other and from the host: 
                     they have their own filesystems, they can’t see each others’ processes, and their computational resource usage can be bounded. 
@@ -234,7 +234,7 @@
 
                     <p>Because containers are small and fast, one application can be packed in each container image. This one-to-one application-to-image relationship unlocks the full benefits of containers.
                     With containers, immutable container images can be created at build/release time rather than deployment time, since each application doesn’t need to be composed with the rest of the application stack, nor married to the production infrastructure environment [8]. 
-                    Generating container images at build/release time enables a consistent environment to be carried from development into production. Similarly, containers are vastly more transparent than VMs, which facilitates monitoring and management. 
+                    Generating container images at build/release time enables a consistent environment to be carried from development into production [9]. Similarly, containers are vastly more transparent than VMs, which facilitates monitoring and management. 
                     This is especially true when the containers’ process lifecycles are managed by the infrastructure rather than hidden by a process supervisor inside the container. 
                     Finally, with a single application per container, managing the containers becomes tantamount to managing deployment of the application [8].
                     Hence, we decided to use container to deploy the JupyterHub with Kubernetes.</p> 
