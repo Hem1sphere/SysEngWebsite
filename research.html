@@ -211,6 +211,7 @@
                     It can work with centralized deployment, Jupyter Notebook to thousands of users is in the organization on centralized infrastructure on- or off-site.
                     What's more, it is container friendly which means we can yse Docker and Kubernetes to scale the deployment, isolate user processes, and simplify software installation [7].</p>
                     
+                    <p>Other Online Coding Envrionment:</p>
                     <br>
 
                     <h6 style="color:#19b0ec"><strong>JupyterHub with Kubernetes</strong></h6>
@@ -239,6 +240,8 @@
                     Finally, with a single application per container, managing the containers becomes tantamount to managing deployment of the application [8].
                     Hence, we decided to use container to deploy the JupyterHub with Kubernetes.</p> 
 
+                    <p></p>
+
                 </div>
 
 
@@ -250,6 +253,13 @@
                     <hr class="featurette-divider">
                     <p>The final decision for the project was to use the Django web framework hosted on Azure App Service and Azure SQL Database. </p>
                     <p>For the on-site coding environment, we chose to employ a JupyterHub Server managed by Azure Kubernetes Service (AKS) as it supports multiple users.</p>
+                    <br>
+                    <p>Main technologies we applied after research: </p>
+                    <p>The CareAI PlayGround application is developed mainly with Django web framework. Regarding front-end, we implement html templates rendered in Django. 
+                    As for the database, the Microsoft SQL Server is used to store the information of different types of users, the challenges provided by clinicians and the solutions uploaded by AI developers. 
+                    Regarding the online coding environment, we chose to use jupyterhub which is a multi-user server that manages and proxies multiple instances of the single-user Jupyter notebook server. 
+                    What's more, we used Kubernetes for automating application deployment, scaling and management, and used helm as package manager for Kubernetes. We deployed Jupyterhub with Helm and Kubernetes on Azure Kubernetes Service.
+                    </p>
 
                 </div>
 
